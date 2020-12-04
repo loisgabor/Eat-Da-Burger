@@ -14,6 +14,21 @@ h2 {
   font-family: "Chonburi", cursive;
 }
 
+.label {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+/* ------------BURGER/EATEN BURGER SECTION------------- */
+.column {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -24,11 +39,7 @@ ul {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-.label {
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-}
-
+/* ------------BUTTON SECTION------------- */
 .create-update-form {
   padding: 5px;
   margin: 5px;
@@ -40,16 +51,6 @@ ul {
   text-align: center;
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .submit {
   display: block;
   margin: 0 auto;
@@ -58,17 +59,16 @@ ul {
   border: none;
   padding: 7px;
 }
-.devour {
+.devour,
+.delete-burger {
   margin: 0 auto;
   background-color: rgb(201, 60, 60);
   border-radius: 0%;
   border: none;
   padding: 7px;
 }
-.submit:hover {
-  background-color: rgb(146, 64, 64);
-  transition: ease-in;
-}
+.submit:hover,
+.delete-burger:hover,
 .devour:hover {
   background-color: rgb(146, 64, 64);
   transition: ease-in;

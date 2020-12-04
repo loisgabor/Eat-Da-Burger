@@ -1,8 +1,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Montserrat&display=swap" rel="stylesheet">
 
-
-<img src="../public/assets/burger.png" alt="burger logo">
 <h1>Eat-Da-Burger!</h1>
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -34,7 +32,7 @@
     <ul>
       {{#each burger}}
       {{#if isDevoured}}
-      <li>{{name}}</li>
+      <li>{{name}} <button class="delete-burger" data-id="{{id}}">Delete!</button></li>
       {{/if}}
       {{/each}}
     </ul>
