@@ -10,15 +10,18 @@ $(function () {
       data: JSON.stringify(state),
       contentType: "application/json; charset=UTF-8",
     }).then(function () {
-      console.log("changed state to devour");
+      console.log(data);
       // Reload the page to get the updated list
-      location.reload();
+      // location.reload();
     });
   });
 
   $(".create-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
+    // if (req.body.data == "") {
+    //   alert("Please enter a valid burger name");
+    // }
 
     var newBurger = {
       name: $("#ca").val().trim(),
@@ -31,8 +34,12 @@ $(function () {
       data: newBurger,
     }).then(function () {
       console.log("created new burger");
+      console.log(data);
+      if (newBurger == "") {
+        alert("must enter a valid burger");
+      }
       // Reload the page to get the updated list
-      location.reload();
+      // location.reload();
     });
   });
 
@@ -45,9 +52,7 @@ $(function () {
     }).then(function () {
       console.log("deleted burger", id);
       // Reload the page to get the updated list
-      location.reload();
+      // location.reload();
     });
   });
 });
-
-$;

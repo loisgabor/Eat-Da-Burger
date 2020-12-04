@@ -3,7 +3,12 @@ body {
   background-repeat: none;
   background-size: cover;
 }
-h1,
+h1 {
+  text-align: center;
+  font-family: "Chonburi", cursive;
+  font-size: 320% !important;
+  margin-bottom: 60px;
+}
 h2 {
   text-align: center;
   font-family: "Chonburi", cursive;
@@ -52,4 +57,19 @@ ul {
   border-radius: 0%;
   border: none;
   padding: 7px;
+}
+.devour {
+  margin: 0 auto;
+  background-color: rgb(201, 60, 60);
+  border-radius: 0%;
+  border: none;
+  padding: 7px;
+}
+.submit:hover {
+  background-color: rgb(146, 64, 64);
+  transition: ease-in;
+}
+.devour:hover {
+  background-color: rgb(146, 64, 64);
+  transition: ease-in;
 }
