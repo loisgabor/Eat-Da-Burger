@@ -1,7 +1,8 @@
 body {
   background-image: url(../burgers-background.jpg);
-  background-repeat: none;
+  /* background-repeat: none; */
   background-size: cover;
+  background-size: 100%;
 }
 h1 {
   text-align: center;
@@ -13,10 +14,16 @@ h2 {
   text-align: center;
   font-family: "Abril Fatface", cursive;
 }
+#ca {
+  height: 29px;
+  border: none;
+  border-radius: 5px;
+}
 
-.label {
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+.burger-name {
+  font-family: Montserrat;
+  float: left;
+  margin: 0;
 }
 /* ------------BURGER/EATEN BURGER SECTION------------- */
 .column {
@@ -30,13 +37,19 @@ h2 {
 }
 
 li {
-  padding: 5px;
-  margin: 5px;
-  background: rgba(266, 200, 2, 0.7);
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  /* margin: 5px; */
+  width: 350px;
+  height: 20px;
+  border-radius: 5px;
+  background: rgba(243, 240, 240, 0.2);
 }
 
 ul {
-  text-align: center;
+  list-style-type: none;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
 }
 /* ------------BUTTON SECTION------------- */
@@ -47,29 +60,39 @@ ul {
 }
 
 .form-group {
+  display: block;
   margin-bottom: 5px;
   text-align: center;
+  width: 400px;
+  margin: auto;
+  /* float: left; */
 }
 
 .submit {
-  display: block;
+  float: right;
   margin: 0 auto;
-  background-color: rgb(201, 60, 60);
-  border-radius: 0%;
-  border: none;
+  background-color: transparent;
+  border-radius: 6px;
+  border: black solid 2px;
+  color: black;
+  font-weight: bold;
   padding: 7px;
 }
 .devour,
 .delete-burger {
-  margin: 0 auto;
-  background-color: rgb(201, 60, 60);
-  border-radius: 0%;
-  border: none;
+  margin-top: -6.5px;
+  /* background-color: rgb(60, 199, 201); */
+  background-color: transparent;
+  border-radius: 6px;
+  border: black solid 2px;
+  color: black;
+  font-weight: bold;
   padding: 7px;
+  float: right;
 }
 .submit:hover,
 .delete-burger:hover,
 .devour:hover {
-  background-color: rgb(146, 64, 64);
+  background-color: rgba(255, 255, 255, 0.4);
   transition: ease-in;
 }

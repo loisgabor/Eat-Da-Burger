@@ -2,7 +2,7 @@
 
 ## Description
 
-For this assigment, we were required to make a burgers application using mySQL and orms.
+For this assigement, we were required to make a burgers application using mySQL and orms.
 
 ## Table of Contents
 
