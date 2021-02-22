@@ -3,7 +3,7 @@ $(function () {
   $(".devour").on("click", function (event) {
     var id = $(this).data("id");
     var state = { isDevoured: true };
-    console.log(state);
+    // console.log(state);
     // Send the PUT request.
     $.ajax("/api/burger/" + id, {
       type: "PUT",
